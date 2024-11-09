@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const DetailPage = () => {
+  const navigate = useNavigate()
   return (
     <div className='dashboard'>
     <div className=' nav-border-flex-2'>
@@ -18,7 +20,7 @@ const DetailPage = () => {
         
     </div>
     <div>
-      <div>Login</div>
+      <div onClick={()=> navigate('/login')}>Login</div>
     </div>
     </div>
     <div className='detailPage'>
